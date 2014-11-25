@@ -17,9 +17,9 @@ int main(){
     str = to_string(static_cast<long long>(a*sign));
     reverse(str.begin(), str.end());
     int i = 0, limit = (str.size()-1)/3;
-    cout<<"init finished"<<endl;
+
     while(i<limit){
-        int pos = (i+1)*3 + i-1;
+        int pos = (i+1)*3 + i;
         str.insert(pos, 1, ',');
         ++i;
     }
